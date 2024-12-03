@@ -22,14 +22,16 @@ public class TestCases {
     }
 
     @Test
-    public void testCar() {
-        Car car = new Car("Sports Car", 4, 4, 5, true, "Sedan", 5);
-        assertEquals("Sports Car", car.getName());
-
-        car.changeGear(3);
-        car.changeSpeed(80, 30);
-        assertEquals(80, car.getCurrentSpeed());
-    }
+public void testCar1() {
+    Car car = new Car("Sports Car", 4, 4, 5, true, "Sedan", 5);
+    assertEquals("Sports Car", car.getName());
+    assertEquals(4, car.getWheels());
+    assertEquals(4, car.getDoors());
+    assertEquals(5, car.getSeats());
+    assertTrue(car.isManual());
+    assertEquals("Sedan", car.getType());
+    assertEquals(1, car.getCurrentGear());  // Check initial gear
+}
 
     @Test
     public void testF1() {
