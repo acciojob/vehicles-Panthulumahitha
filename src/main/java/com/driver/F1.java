@@ -37,9 +37,12 @@ public class F1 extends Car {
     private int currentGear;
 
     // Constructor and other methods...
+ public void changeGear(int gear) {
+        super.changeGear(gear);
+    }
 
-    public void changeGear(int gear) {
-        this.currentGear = gear;
+    public void changeSpeed(int speed, int direction) {
+        super.changeSpeed(speed, direction);
     }
 }
 
