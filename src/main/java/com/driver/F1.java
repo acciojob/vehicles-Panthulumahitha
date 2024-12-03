@@ -32,9 +32,6 @@ public class F1 extends Car {
     }
 
     // Override getCurrentGear if needed (if F1-specific)
-    @Override
-   public class F1 {
-    private int currentGear;
 
     // Constructor and other methods...
  public void changeGear(int gear) {
@@ -46,6 +43,5 @@ public class F1 extends Car {
     }
 }
 
-    // Optional: Additional F1-specific getter methods if needed
-}
+
 
