@@ -30,4 +30,13 @@ public class F1 extends Car {
             changeSpeed(newSpeed, getCurrentDirection());
         }
     }
+
+    // Override getCurrentGear if needed (if F1-specific)
+    @Override
+    public int getCurrentGear() {
+        return super.getCurrentGear();
+    }
+
+    // Optional: Additional F1-specific getter methods if needed
 }
+
