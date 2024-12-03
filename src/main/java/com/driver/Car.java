@@ -25,11 +25,10 @@ public class Car extends Vehicle {
         System.out.println("Car.setCurrentGear(): Changed to " + this.currentGear + " gear.");
     }
 
-    public void changeSpeed(int speed, int gear) {
-        changeGear(gear);
-        super.move(speed);
-    }
-
+  public void changeSpeed(int speed, int direction) {
+    changeGear(gear);
+    super.move(speed, direction); // assuming direction is defined or passed
+}
     public int getWheels() {
         return wheels;
     }
