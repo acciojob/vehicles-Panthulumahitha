@@ -25,9 +25,23 @@ public class Car extends Vehicle {
         System.out.println("Car.setCurrentGear(): Changed to " + this.currentGear + " gear.");
     }
 
-  public void changeSpeed(int speed, int direction) {
+ public void changeSpeed(int speed, int direction) {
+    int gear;
+    if (speed > 0 && speed <= 50) {
+        gear = 1;
+    } else if (speed <= 100) {
+        gear = 2;
+    } else if (speed <= 150) {
+        gear = 3;
+    } else if (speed <= 200) {
+        gear = 4;
+    } else if (speed <= 250) {
+        gear = 5;
+    } else {
+        gear = 6;
+    }
     changeGear(gear);
-    super.move(speed, direction); // assuming direction is defined or passed
+    super.move(speed, direction);
 }
     public int getWheels() {
         return wheels;
